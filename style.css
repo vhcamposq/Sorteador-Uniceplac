@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", "Helvetica Neue", Helvetica, Arial;
+    text-align: center;
+}
+body{
+    
+    background-image: url(img/background.png);
+    background-size: cover;
+}
+#logo{
+    padding-bottom: 30px;
+}
+h1{
+    font-size: 250px;
+    padding-top: 100px;
+    color: #ff9a00;
+}
+img{
+    width: 70%;
+}
+
+form{
+    padding-top: 50px;
+}
+input{
+    padding: 10px;
+    font-size: 45px;
+    width: 450px;
+    color: #ff9a00;
+    font-weight: bold;
+    border: 5px solid #ff9a00;
+    border: 7px solid #008037;
+    border-radius: 15px;
+}
+.scene {
+    display: inline-block;
+    width: 600px;
+    height: 260px;
+    margin: 40px 0;
+    perspective: 600px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1150ms;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+    background: white;
+  }
+  
+  .card__face--back {
+    background: white;
+    transform: rotateY(180deg);
+  }
+  
